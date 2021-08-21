@@ -1,8 +1,8 @@
-def isAnagram(s1, s2) -> bool:
+def is_anagram(s1: str, s2: str) -> bool:
     if len(s1) != len(s2):
         return False
-    
-    #return sorted(s1) == sorted(s2) #not the fastest(linear) so we shouldnt do this
+
+    # return sorted(s1) == sorted(s2) #not the fastest(linear) so we shouldn't do this
     s1 = sorted(s1)
     s2 = sorted(s2)
 
@@ -12,10 +12,11 @@ def isAnagram(s1, s2) -> bool:
 
     return True
 
-#O(NlogN)
-#test 
+
+# O(NlogN)
+# test
 if __name__ == '__main__':
-    print(isAnagram('car', 'rac'))
-    print(isAnagram('car', 'rca'))
-    print(isAnagram('car', 'race'))
-    print(isAnagram('car', 'rar'))
+    print(is_anagram('car', 'rac'))
+    print(is_anagram('car', 'rca'))
+    print(is_anagram('car', 'race'))
+    print(is_anagram('car', 'rar'))

@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    import LinkedList as li
+    ll = li.LinkedList()
+    ll.print()
+    print(ll.size())
+    ll.insert_end(4)
+    ll.insert_end(10)
+    ll.insert_start(5)
+    ll.insert_start(6)
+    ll.insert_start(7)
+    ll.insert_end(8)
+    ll.insert_end(15)
+    ll.insert_start(0)
+    print(ll.size())
+    ll.remove(150)
+    ll.remove(15)
+    print(ll.size())
+    ll.print()
